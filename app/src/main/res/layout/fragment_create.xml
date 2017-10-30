@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:background="@drawable/edit_text_black_border"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:maxLines="1"
+        android:id="@+id/etTitle"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:inputType="textCapWords"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:background="@drawable/edit_text_black_border"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:minLines="4"
+        android:maxLines="4"
+        android:id="@+id/etDescription"
+        android:inputType="textCapSentences|textMultiLine"
+        style="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/category_tags"
+        android:background="@drawable/edit_text_black_border"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:maxLines="1"
+        android:id="@+id/etCategoryTags"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:inputType="textCapCharacters"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/author"
+        android:background="@drawable/edit_text_black_border"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:maxLines="1"
+        android:id="@+id/etAuthor"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:inputType="textCapSentences"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/image_url"
+        android:background="@drawable/edit_text_black_border"
+        android:padding="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:maxLines="1"
+        android:id="@+id/etImageUrl"
+        android:inputType="textUri"
+        android:text="http://robohub.org/wp-content/uploads/2017/02/grid-AI.jpg"
+        style="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_25"
+        android:background="@drawable/blue_border"
+        android:padding="@dimen/margin_10"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/publish"
+        android:textColor="@color/colorBlueBorder"
+        android:gravity="center"
+        android:id="@+id/tvPublish"/>
+
+</LinearLayout>
+</ScrollView>
+<include layout="@layout/layout_progress_bar"/>
+</RelativeLayout>

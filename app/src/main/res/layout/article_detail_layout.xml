@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:minHeight="@dimen/margin_100"
+            android:id="@+id/ivImage"
+            android:contentDescription="@string/news_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                android:id="@+id/tvTitle"
+                android:maxLines="1"
+                android:text="@string/sample_news_title"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCategoryTags"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorCategoryTag"
+                    android:textStyle="bold"
+                    android:text="@string/sample_category"
+                    android:textSize="@dimen/text_14"
+                    android:textAllCaps="true"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDate"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorDate"
+                    android:text="@string/sample_date"
+                    android:textSize="@dimen/text_14"
+                    android:gravity="end"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                android:textColor="@color/colorDescription"
+                android:text="@string/sample_description"
+                android:textSize="@dimen/text_15"
+                />
+
+        </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_2"
+        android:background="@color/colorSeparator"
+        android:layout_marginTop="@dimen/margin_20"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlLikeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/not_liked"
+            android:layout_toStartOf="@+id/tvLikes"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivLike"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_10"
+            android:textSize="@dimen/text_15"
+            android:id="@+id/tvLikes"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
